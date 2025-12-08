@@ -37,4 +37,3 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch!");
     }
 }
-    
