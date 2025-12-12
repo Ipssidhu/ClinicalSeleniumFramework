@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T23:05:14 IST" name="Default suite" finished-at="2025-12-12T23:05:20 IST" duration-ms="6177">
+  <suite started-at="2025-12-12T23:49:16 IST" name="Default suite" finished-at="2025-12-12T23:49:20 IST" duration-ms="4436">
     <groups>
     </groups>
-    <test started-at="2025-12-12T23:05:14 IST" name="Default test" finished-at="2025-12-12T23:05:20 IST" duration-ms="6177">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-12T23:05:14 IST" name="setUp" finished-at="2025-12-12T23:05:18 IST" duration-ms="4615" status="PASS">
+    <test started-at="2025-12-12T23:49:16 IST" name="Default test" finished-at="2025-12-12T23:49:20 IST" duration-ms="4436">
+      <class name="tests.AddToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:49:16 IST" name="setUp" finished-at="2025-12-12T23:49:19 IST" duration-ms="2660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginShouldNavigateToProductsPage()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-12T23:05:18 IST" name="validLoginShouldNavigateToProductsPage" finished-at="2025-12-12T23:05:19 IST" duration-ms="1008" status="PASS">
+        <test-method signature="addSingleProductToCart_shouldIncreaseCartCount()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:49:19 IST" name="addSingleProductToCart_shouldIncreaseCartCount" finished-at="2025-12-12T23:49:20 IST" duration-ms="1289" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginShouldNavigateToProductsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-12T23:05:20 IST" name="tearDown" finished-at="2025-12-12T23:05:20 IST" duration-ms="488" status="PASS">
+        </test-method> <!-- addSingleProductToCart_shouldIncreaseCartCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:49:20 IST" name="tearDown" finished-at="2025-12-12T23:49:20 IST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.AddToCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

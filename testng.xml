@@ -2,7 +2,8 @@
 <suite name="Basic Selenium Suite">
     <test name="Open Google Test">
         <classes>
-            <class name="tests.LoginTest" />
+            <class name="tests.AddToCartTest" />
+            
         </classes>
     </test>
 </suite>
