@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-08T22:20:08 IST" name="Basic Selenium Suite" finished-at="2025-12-08T22:20:12 IST" duration-ms="3999">
+  <suite started-at="2025-12-12T23:05:14 IST" name="Default suite" finished-at="2025-12-12T23:05:20 IST" duration-ms="6177">
     <groups>
     </groups>
-    <test started-at="2025-12-08T22:20:08 IST" name="Open Google Test" finished-at="2025-12-08T22:20:12 IST" duration-ms="3999">
+    <test started-at="2025-12-12T23:05:14 IST" name="Default test" finished-at="2025-12-12T23:05:20 IST" duration-ms="6177">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-08T22:20:08 IST" name="setUp" finished-at="2025-12-08T22:20:10 IST" duration-ms="2693" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-12T23:05:14 IST" name="setUp" finished-at="2025-12-12T23:05:18 IST" duration-ms="4615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginShouldNavigateToProductsPage()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-08T22:20:10 IST" name="validLoginShouldNavigateToProductsPage" finished-at="2025-12-08T22:20:11 IST" duration-ms="726" status="PASS">
+        <test-method signature="validLoginShouldNavigateToProductsPage()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-12T23:05:18 IST" name="validLoginShouldNavigateToProductsPage" finished-at="2025-12-12T23:05:19 IST" duration-ms="1008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginShouldNavigateToProductsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-08T22:20:11 IST" name="tearDown" finished-at="2025-12-08T22:20:12 IST" duration-ms="512" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@54d9d12d]" started-at="2025-12-12T23:05:20 IST" name="tearDown" finished-at="2025-12-12T23:05:20 IST" duration-ms="488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
-    </test> <!-- Open Google Test -->
-  </suite> <!-- Basic Selenium Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

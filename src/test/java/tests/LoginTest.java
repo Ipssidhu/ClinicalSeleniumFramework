@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseTest;
+import pages.InventoryPage;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,5 +36,21 @@ public class LoginTest extends BaseTest {
         String expectedTitle = "Swag Labs";
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch!");
+        
+        // now use InventoryPage
+        InventoryPage inventory = new pages.InventoryPage(driver);
+
+        // get count and print names
+        int productCount = inventory.getProductCount();
+        inventory.printProductNames();
+
+        // assertion: expect 6 products on SauceDemo inventory page
+        org.testng.Assert.assertEquals(productCount, 6, "Product count mismatch on Inventory page");
+
+        // print for visibility
+        System.out.println("Inventory product count: " + productCount);
+        System.out.println("Test complete - inventory validated.");
     }
+    
+    
 }
