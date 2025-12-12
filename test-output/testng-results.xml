@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T23:49:16 IST" name="Default suite" finished-at="2025-12-12T23:49:20 IST" duration-ms="4436">
+  <suite started-at="2025-12-12T23:51:41 IST" name="Default suite" finished-at="2025-12-12T23:51:48 IST" duration-ms="6730">
     <groups>
     </groups>
-    <test started-at="2025-12-12T23:49:16 IST" name="Default test" finished-at="2025-12-12T23:49:20 IST" duration-ms="4436">
+    <test started-at="2025-12-12T23:51:41 IST" name="Default test" finished-at="2025-12-12T23:51:48 IST" duration-ms="6730">
       <class name="tests.AddToCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:49:16 IST" name="setUp" finished-at="2025-12-12T23:49:19 IST" duration-ms="2660" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:51:41 IST" name="setUp" finished-at="2025-12-12T23:51:45 IST" duration-ms="3854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addSingleProductToCart_shouldIncreaseCartCount()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:49:19 IST" name="addSingleProductToCart_shouldIncreaseCartCount" finished-at="2025-12-12T23:49:20 IST" duration-ms="1289" status="PASS">
+        <test-method signature="addSingleProductToCart_shouldIncreaseCartCount()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:51:45 IST" name="addSingleProductToCart_shouldIncreaseCartCount" finished-at="2025-12-12T23:51:47 IST" duration-ms="1989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSingleProductToCart_shouldIncreaseCartCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:49:20 IST" name="tearDown" finished-at="2025-12-12T23:49:20 IST" duration-ms="433" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:51:47 IST" name="tearDown" finished-at="2025-12-12T23:51:48 IST" duration-ms="825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

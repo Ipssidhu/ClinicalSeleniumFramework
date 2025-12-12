@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.OpenGoogleTest">
+      <class name="tests.AddToCartTest">
         <methods>
-          <include name="openGoogleHomePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addSingleProductToCart_shouldIncreaseCartCount"/>
         </methods>
-      </class> <!-- tests.OpenGoogleTest -->
+      </class> <!-- tests.AddToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
