@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T23:51:41 IST" name="Default suite" finished-at="2025-12-12T23:51:48 IST" duration-ms="6730">
+  <suite started-at="2025-12-13T16:40:37 IST" name="Basic Selenium Suite" finished-at="2025-12-13T16:40:42 IST" duration-ms="4909">
     <groups>
     </groups>
-    <test started-at="2025-12-12T23:51:41 IST" name="Default test" finished-at="2025-12-12T23:51:48 IST" duration-ms="6730">
-      <class name="tests.AddToCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:51:41 IST" name="setUp" finished-at="2025-12-12T23:51:45 IST" duration-ms="3854" status="PASS">
+    <test started-at="2025-12-13T16:40:37 IST" name="Open Google Test" finished-at="2025-12-13T16:40:42 IST" duration-ms="4909">
+      <class name="tests.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartTest@54d9d12d]" started-at="2025-12-13T16:40:37 IST" name="setUp" finished-at="2025-12-13T16:40:40 IST" duration-ms="2762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addSingleProductToCart_shouldIncreaseCartCount()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:51:45 IST" name="addSingleProductToCart_shouldIncreaseCartCount" finished-at="2025-12-12T23:51:47 IST" duration-ms="1989" status="PASS">
+        <test-method signature="addRemoveProducts_cartCountAndTotal_shouldUpdate()[pri:0, instance:tests.CartTest@54d9d12d]" started-at="2025-12-13T16:40:40 IST" name="addRemoveProducts_cartCountAndTotal_shouldUpdate" finished-at="2025-12-13T16:40:42 IST" duration-ms="1764" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addSingleProductToCart_shouldIncreaseCartCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AddToCartTest@54d9d12d]" started-at="2025-12-12T23:51:47 IST" name="tearDown" finished-at="2025-12-12T23:51:48 IST" duration-ms="825" status="PASS">
+        </test-method> <!-- addRemoveProducts_cartCountAndTotal_shouldUpdate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@54d9d12d]" started-at="2025-12-13T16:40:42 IST" name="tearDown" finished-at="2025-12-13T16:40:42 IST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.AddToCartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.CartTest -->
+    </test> <!-- Open Google Test -->
+  </suite> <!-- Basic Selenium Suite -->
 </testng-results>

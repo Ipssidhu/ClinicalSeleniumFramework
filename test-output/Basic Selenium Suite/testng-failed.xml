@@ -3,13 +3,13 @@
 <suite name="Failed suite [Basic Selenium Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Open Google Test(failed)">
     <classes>
-      <class name="tests.OpenGoogleTest">
+      <class name="tests.CartTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="openGoogleHomePage"/>
+          <include name="addRemoveProducts_cartCountAndTotal_shouldUpdate"/>
         </methods>
-      </class> <!-- tests.OpenGoogleTest -->
+      </class> <!-- tests.CartTest -->
     </classes>
   </test> <!-- Open Google Test(failed) -->
 </suite> <!-- Failed suite [Basic Selenium Suite] -->
