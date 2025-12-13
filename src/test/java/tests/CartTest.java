@@ -63,6 +63,10 @@ public class CartTest extends BaseTest {
         wait.until(driver1 -> cart.getCartItemCount() == 1);
 
         Assert.assertEquals(cart.getCartItemCount(), 1, "Cart count should be 1 after removal");
+        
+        // intentional failures
+     //   Assert.assertEquals(cart.getCartItemCount(), 2, "Intentional failure to test screenshot");
+
 
         System.out.println("Cart add/remove validated successfully.");
         
