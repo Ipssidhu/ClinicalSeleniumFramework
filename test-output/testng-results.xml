@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T15:03:58 IST" name="Default suite" finished-at="2025-12-31T15:04:03 IST" duration-ms="4172">
+  <suite started-at="2025-12-31T16:42:53 IST" name="Default suite" finished-at="2025-12-31T16:42:58 IST" duration-ms="4772">
     <groups>
     </groups>
-    <test started-at="2025-12-31T15:03:58 IST" name="Default test" finished-at="2025-12-31T15:04:03 IST" duration-ms="4172">
-      <class name="api.AuthTokenTest">
-        <test-method signature="loginAndAccessProtectedApi()[pri:0, instance:api.AuthTokenTest@38425407]" started-at="2025-12-31T15:03:58 IST" name="loginAndAccessProtectedApi" finished-at="2025-12-31T15:04:03 IST" duration-ms="4125" status="PASS">
+    <test started-at="2025-12-31T16:42:53 IST" name="Default test" finished-at="2025-12-31T16:42:58 IST" duration-ms="4772">
+      <class name="api.tests.GetUserProfileTest">
+        <test-method signature="getProfile_shouldReturnUserDetails()[pri:0, instance:api.tests.GetUserProfileTest@38425407]" started-at="2025-12-31T16:42:53 IST" name="getProfile_shouldReturnUserDetails" finished-at="2025-12-31T16:42:58 IST" duration-ms="4730" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAndAccessProtectedApi -->
-      </class> <!-- api.AuthTokenTest -->
+        </test-method> <!-- getProfile_shouldReturnUserDetails -->
+      </class> <!-- api.tests.GetUserProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
