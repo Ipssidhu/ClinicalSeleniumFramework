@@ -2,48 +2,58 @@ package api;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static io.restassured.RestAssured.*;
 
 public class AuthTokenTest {
 
     @Test
-    public void generateAuthToken() {
+    public void loginAndAccessProtectedApi() {
 
-      /*  RestAssured.baseURI = "https://reqres.in";
+        // 1️⃣ Set base URI
+        RestAssured.baseURI = "https://dummyjson.com";
 
-        String requestBody = "{\n" +
-                "  \"email\": \"eve.holt@reqres.in\",\n" +
-                "  \"password\": \"cityslicka\"\n" +
+        // 2️⃣ Login request body
+        String loginPayload = "{\n" +
+                "  \"username\": \"emilys\",\n" +
+                "  \"password\": \"emilyspass\"\n" +
                 "}";
 
-        Response response =
-                given()
-                    .header("Content-Type", "application/json")
-                    .body(requestBody)
-                .when()
-                    .post("/api/login")
-                .then()
-                    .statusCode(200)
-                    .extract()
-                    .response();
+        // 3️⃣ Send LOGIN request
+        Response loginResponse =
+                RestAssured
+                    .given()
+                        .header("Content-Type", "application/json")
+                        .body(loginPayload)
+                    .when()
+                        .post("/auth/login")
+                    .then()
+                        .statusCode(200)
+                        .extract()
+                        .response();
 
-        String token = response.jsonPath().getString("token");
+        // 4️⃣ Extract access token
+        String accessToken = loginResponse.jsonPath().getString("accessToken");
+        System.out.println("Access Token: " + accessToken);
 
-        System.out.println("Generated Token: " + token);  */
-    	
-    	String token =
-    			given()
-    			    .contentType("application/json")
-    			    .body("{ \"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\" }")
-    			.when()
-    			    .post("https://reqres.in/api/login")
-    			.then()
-    			    .statusCode(200)
-    			    .extract()
-    			    .path("token");
+        Assert.assertNotNull(accessToken, "Access token should not be null");
 
-    			System.out.println("Token: " + token);
+        // 5️⃣ Call secured API using token
+        Response meResponse =
+                RestAssured
+                    .given()
+                        .header("Authorization", "Bearer " + accessToken)
+                    .when()
+                        .get("/auth/me")
+                    .then()
+                        .statusCode(200)
+                        .extract()
+                        .response();
+
+        // 6️⃣ Validate secured API response
+        String username = meResponse.jsonPath().getString("username");
+        System.out.println("Logged-in Username: " + username);
+
+        Assert.assertEquals(username, "emilys");
     }
 }
