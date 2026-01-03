@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.tests.GetUserProfileTest">
+      <class name="api.tests.DataDrivenLoginTest">
         <methods>
-          <include name="setupApiSpec"/>
-          <include name="getProfile_shouldReturnUserDetails"/>
+          <include name="loginApi_shouldReturnExpectedStatus" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- api.tests.GetUserProfileTest -->
+      </class> <!-- api.tests.DataDrivenLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
