@@ -5,6 +5,7 @@
     <classes>
       <class name="api.tests.GetUserProfileTest">
         <methods>
+          <include name="setupApiSpec"/>
           <include name="getProfile_shouldReturnUserDetails"/>
         </methods>
       </class> <!-- api.tests.GetUserProfileTest -->

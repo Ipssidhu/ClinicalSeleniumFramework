@@ -1,22 +1,26 @@
 package api.tests;
 
-import org.testng.annotations.Test;
-import org.testng.Assert;
+import static io.restassured.RestAssured.given;
 
-import api.client.ApiClient;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import api.base.ApiBaseTest;
 import io.restassured.response.Response;
 
-public class GetUserProfileTest {
+public class GetUserProfileTest extends ApiBaseTest {
 
     @Test
     public void getProfile_shouldReturnUserDetails() {
 
-        ApiClient client = new ApiClient();
-
-        Response response = client.get("/auth/me");
+        Response response =
+                given()
+                    .spec(requestSpec)
+                .when()
+                    .get("/auth/me");
 
         // Assertions
-        Assert.assertEquals(response.statusCode(), 200);
+        Assert.assertEquals(response.getStatusCode(), 200);
         Assert.assertNotNull(response.jsonPath().getString("username"));
 
         System.out.println("Username: " + response.jsonPath().getString("username"));
